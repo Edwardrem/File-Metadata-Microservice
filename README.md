@@ -1,27 +1,13 @@
-Welcome to Glitch
-=================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+# API Project: File Metadata Microservice for freeCodeCamp
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+###    User stories:
+1. I can submit a form that includes a file upload.
+2. The form file input field  has the "name" attribute set to "upfile". We rely on this in testing.
+3. When I submit something, I will receive the file name and size in bytes within the JSON response
 
-Find out more [about Glitch](https://glitch.com/about).
+### Usage :
+* Go to the main page, and upload a file using the provided form.
 
-
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Glitch](https://glitch.com/)
--------------------
-
-\ ゜o゜)ノ
+### Hint:
+* To handle the file uploading you should use the [multer](https://www.npmjs.com/package/multer) npm package.
