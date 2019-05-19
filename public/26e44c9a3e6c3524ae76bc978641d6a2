@@ -1,0 +1,27 @@
+let porcentagemEmpresa = 0.09;
+let igpm = 0.088;
+let valorInicialParcelas = 886.08;
+let prestacoesMes = 13;
+let anoInicial = 2018;
+let valorComJurosEmpresa = valorInicialParcelas * porcentagemEmpresa;
+let ultimoValorCorrigidoComIGPM = valorInicialParcelas;
+
+function processCalc() {
+  console.log(
+    `Valor prestações no ano de ${anoInicial}: R$${(
+      valorInicialParcelas +
+      valorInicialParcelas * porcentagemEmpresa
+    ).toFixed(2)}`
+  );
+
+  for (let ano = anoInicial + 1; ano <= anoInicial + prestacoesMes; ano++) {
+    ultimoValorCorrigidoComIGPM =
+      ultimoValorCorrigidoComIGPM + ultimoValorCorrigidoComIGPM * igpm;
+    let valorCorrigidoAno = valorComJurosEmpresa + ultimoValorCorrigidoComIGPM;
+    console.log(
+      `Valor prestações no ano de ${ano}: R$${valorCorrigidoAno.toFixed(2)}`
+    );
+  }
+}
+
+processCalc();
